@@ -1,0 +1,25 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# .exe
+*.exe
+
+# Qt
+build-*
+*.user
+
+# Code::Blocks
+bin
+obj
+*.depend
