@@ -19,9 +19,14 @@
      <rect>
       <x>360</x>
       <y>30</y>
-      <width>46</width>
-      <height>13</height>
+      <width>91</width>
+      <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>TextLabel</string>
