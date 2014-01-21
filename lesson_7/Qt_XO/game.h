@@ -4,8 +4,8 @@
 #include <QString>
 #include <QFile>
 
-// Состояние игры
-enum Move {
+// Состояние игры и логика игрового мира
+enum State {
     X_MOVE, // Ход крестиков
     O_MOVE, // Ход ноликов
     X_WIN,  // Крестики выйграли
@@ -17,7 +17,7 @@ enum Move {
 // Ходы, выйгрыш/проигрыш
 class Game
 {
-    Move move; // Чей сейчас ход
+    State move; // Чей сейчас ход
     char Map[3][3]; // Игровое поле
 public:
     Game();
