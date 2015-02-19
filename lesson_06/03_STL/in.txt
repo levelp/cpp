@@ -1,0 +1,15 @@
+sorts
+the
+elements
+in
+the
+range
+first
+last
+into
+ascending
+order
+какие-то
+слова
+арбуз
+дыня

@@ -1,0 +1,17 @@
+Stack s
+s.push(2)
+s.push(3)
+3 - 3
+2 - 2
+Stack s2
+s2.push(10)
+s.push(11)
+cout << "11 - " << s.pop() << endl
+11 - 11
+cout << "10 - " << s2.pop() << endl
+10 - 10
+Queue q
+q.put(10)
+q.put(14)
+10 - 10
+14 - 14

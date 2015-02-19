@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS "people";
+CREATE TABLE "people" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , "name" TEXT NOT NULL , "address" TEXT NOT NULL );
+INSERT INTO "people" VALUES(1,'Иванов Иван Иванович','1-ая Советская улица, дом 12');
+INSERT INTO "people" VALUES(2,'Иванов Пётр Иванович','1-ая Советская улица, дом 12');
+INSERT INTO "people" VALUES(3,'Иванов Пётр Петрович','1-ая Советская улица, дом 13');
+INSERT INTO "people" VALUES(4,'Сидоров Сидор Сидорович','Московский проспект 133');
+DROP TABLE IF EXISTS "phone";
+CREATE TABLE "phone" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , "people_id" INTEGER, "phone" TEXT, "is_mobile" BOOL);
+INSERT INTO "phone" VALUES(1,1,'78125235325',0);
+INSERT INTO "phone" VALUES(2,1,'+7-911-123-21-23',1);
+INSERT INTO "phone" VALUES(4,2,'+7-921-123-23-45',1);
+INSERT INTO "phone" VALUES(5,2,'+7-921-234-23-45',1);
+INSERT INTO "phone" VALUES(6,2,'+7-911-123-45-67',1);
+INSERT INTO "phone" VALUES(8,2,'+7-921-345-23-45',1);
+INSERT INTO "phone" VALUES(9,2,'+7-921-675-23-45',1);
