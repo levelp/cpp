@@ -1,0 +1,26 @@
+\section{Язык D - http://dlang.org}
+\subsection{Язык D}
+
+\begin{frame}[t,fragile]{Развитие C - язык D - http://dlang.org}
+  \textbf{D} - объектно-ориентированный, императивный, мультипарадигмальный язык программирования, 
+  созданный Уолтером Брайтом из компании Digital Mars. 
+  Изначально был задуман как реинжиниринг языка C++, однако, несмотря на значительное влияние С++, не является его вариантом. 
+  В D были заново реализованы некоторые свойства C++, 
+  также язык испытал влияние концепций из других языков программирования, таких как Java, Python, Ruby, C\# и Eiffel.
+
+\begin{lstlisting}
+void main() {
+  // Define an array of numbers, double[].
+  auto arr = [ 1, 2, 3.14, 5.1, 6 ];
+  auto dictionary = [ "one" : 1, "two" : 2, "three" : 3 ];
+  // Calls the min function defined below
+  auto x = min(arr[0], dictionary["two"]);
+}
+// Type deduction works for function results
+auto min(T1, T2)(T1 lhs, T2 rhs) {
+  return rhs < lhs ? rhs : lhs;
+}
+\end{lstlisting}
+
+
+\end{frame}

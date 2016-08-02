@@ -1,0 +1,5 @@
+sol03.cpp: In function 'int main()':
+sol03.cpp:8:14: warning: suggest parentheses around comparison in operand of '^' [-Wparentheses]
+   cout << (x ^ 5 == 3) << endl;
+              ^
+4

@@ -1,0 +1,5 @@
+sol04.cpp: In function 'int main()':
+sol04.cpp:19:22: warning: argument to 'sizeof' in 'void* memcpy(void*, const void*, size_t)' call is the same pointer type 'int*' as the destination; expected 'int' or an explicit length [-Wsizeof-pointer-memaccess]
+   memcpy(b, a, sizeof(a)); // Вычисляется размер int, а не всего массива
+                      ^
+0 4 5

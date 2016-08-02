@@ -1,0 +1,7 @@
+Qt
+Edit -> копировать в ListView
+Network
+SQL
+Git
+===
+https://git-for-windows.github.io

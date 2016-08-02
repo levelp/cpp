@@ -1,0 +1,23 @@
+sol06.cpp: In function 'int main()':
+sol06.cpp:10:36: warning: comparison of constant '2' with boolean expression is always false [-Wbool-compare]
+   cout << "(2 <= (1 <= 2)) " << (2 <= (1 <= 2)) << endl;
+                                    ^
+sol06.cpp:12:39: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << "(2 <= 1 <= 2) " << (2 <= 1 <= 2) << endl;
+                                       ^
+sol06.cpp:13:19: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << (0 <= 1 <= 2) << endl;
+                   ^
+sol06.cpp:14:21: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << (-5 <= -4 <= -3) << endl;
+                     ^
+sol06.cpp:15:20: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << (10 <= 5 <= 3) << endl;
+                    ^
+1 0
+(2 <= (1 <= 2)) 0
+((2 <= 1) <= 2) 1
+(2 <= 1 <= 2) 1
+1
+0
+1

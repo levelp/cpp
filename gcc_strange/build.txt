@@ -1,0 +1,117 @@
+sol03.cpp: In function 'int main()':
+sol03.cpp:8:14: warning: suggest parentheses around comparison in operand of '^' [-Wparentheses]
+   cout << (x ^ 5 == 3) << endl;
+              ^
+sol04.cpp: In function 'int main()':
+sol04.cpp:19:22: warning: argument to 'sizeof' in 'void* memcpy(void*, const void*, size_t)' call is the same pointer type 'int*' as the destination; expected 'int' or an explicit length [-Wsizeof-pointer-memaccess]
+   memcpy(b, a, sizeof(a)); // Вычисляется размер int, а не всего массива
+                      ^
+sol06.cpp: In function 'int main()':
+sol06.cpp:10:36: warning: comparison of constant '2' with boolean expression is always false [-Wbool-compare]
+   cout << "(2 <= (1 <= 2)) " << (2 <= (1 <= 2)) << endl;
+                                    ^
+sol06.cpp:12:39: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << "(2 <= 1 <= 2) " << (2 <= 1 <= 2) << endl;
+                                       ^
+sol06.cpp:13:19: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << (0 <= 1 <= 2) << endl;
+                   ^
+sol06.cpp:14:21: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << (-5 <= -4 <= -3) << endl;
+                     ^
+sol06.cpp:15:20: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   cout << (10 <= 5 <= 3) << endl;
+                    ^
+sol08.cpp: In function 'int main()':
+sol08.cpp:9:26: warning: operation on 'a' may be undefined [-Wsequence-point]
+   cout << ++a << a << a++;
+                          ^
+sol11.cpp:8:16: warning: trigraph ??/ ignored, use -trigraphs to enable [-Wtrigraphs]
+   // A comment ??/
+                ^
+sol12.cpp: In function 'int main()':
+sol12.cpp:10:12: error: no match for 'operator>>' (operand types are 'std::basic_ostream<char>' and 'int')
+   str << a >> b << c >> d << e;
+            ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/string:53:0,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/locale_classes.h:40,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/ios_base.h:41,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/ios:42,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/ostream:38,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:39,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/basic_string.tcc:1441:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/basic_string.tcc:1441:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:934:0,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:40,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/istream.tcc:955:5: note: candidate: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:934:0,
+                 from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:40,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/istream.tcc:923:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:40:0,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:756:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:756:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:40:0,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:761:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:761:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:40:0,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:803:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:803:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+In file included from C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/iostream:40:0,
+                 from sol12.cpp:1:
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:808:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+C:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/istream:808:5: note:   template argument deduction/substitution failed:
+sol12.cpp:10:15: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+   str << a >> b << c >> d << e;
+               ^
+sol13.cpp: In function 'int main()':
+sol13.cpp:10:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i <= v.size() - 2; i++)
+                     ^
+sol15.cpp:7:11: warning: multi-character character constant [-Wmultichar]
+   cout << '123' << endl;
+           ^
+sol17.cpp: In function 'int main()':
+sol17.cpp:8:20: warning: second operand of conditional expression has no effect [-Wunused-value]
+   cout << x ? 1 : 2;
+                    ^
+sol17.cpp:8:20: warning: third operand of conditional expression has no effect [-Wunused-value]

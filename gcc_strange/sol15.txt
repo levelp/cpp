@@ -1,0 +1,4 @@
+sol15.cpp:7:11: warning: multi-character character constant [-Wmultichar]
+   cout << '123' << endl;
+           ^
+3224115

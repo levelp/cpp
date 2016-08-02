@@ -1,0 +1,6 @@
+#ifndef MODULE2_H_INCLUDED
+#define MODULE2_H_INCLUDED
+
+void f();
+
+#endif // MODULE2_H_INCLUDED

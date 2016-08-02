@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>221</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Анкета</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>211</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>271</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>252</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>1100</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525; background-color:#ffffff;&quot;&gt;Концепция MVC была описана&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt; &lt;/span&gt;&lt;a href=&quot;http://ru.wikipedia.org/w/index.php?title=%D0%A2%D1%80%D1%8E%D0%B3%D0%B2%D0%B5_%D0%A0%D0%B5%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%83%D0%B3&amp;amp;action=edit&amp;amp;redlink=1&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; text-decoration: underline; color:#a55858;&quot;&gt;Трюгве Реенскауг&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt; (&lt;/span&gt;&lt;a href=&quot;http://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; text-decoration: underline; color:#0b0080;&quot;&gt;англ.&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt; &lt;/span&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Trygve_Reenskaug&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; font-style:italic; text-decoration: underline; color:#663366;&quot;&gt;Trygve Reenskaug&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt;) в 1979 году&lt;/span&gt;&lt;a name=&quot;cite_ref-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://ru.wikipedia.org/wiki/Model-View-Controller#cite_note-2&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; text-decoration: underline; color:#0b0080; vertical-align:super;&quot;&gt;[&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#0b0080; vertical-align:super;&quot;&gt;2]&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt; , работавшим в то время над языком программирования &lt;/span&gt;&lt;a href=&quot;http://ru.wikipedia.org/wiki/Smalltalk&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; text-decoration: underline; color:#0b0080;&quot;&gt;Smalltalk&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt; в &lt;/span&gt;&lt;a href=&quot;http://ru.wikipedia.org/wiki/Xerox_PARC&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; text-decoration: underline; color:#0b0080;&quot;&gt;Xerox PARC&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt;. Оригинальная реализация описана в статье «Applications Programming in Smalltalk-80: How to use Model-View-Controller»&lt;/span&gt;&lt;a name=&quot;cite_ref-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://ru.wikipedia.org/wiki/Model-View-Controller#cite_note-3&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; text-decoration: underline; color:#0b0080; vertical-align:super;&quot;&gt;[&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#0b0080; vertical-align:super;&quot;&gt;3]&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot;&gt;. Затем Джим Алтофф с командой разработчиков реализовали версию MVC для библиотеки классов Smalltalk-80.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:14.9333px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525; background-color:#ffffff;&quot;&gt;В оригинальной концепции была описана сама идея и роль каждого из элементов: модели, представления и контроллера. Но связи между ними были описаны без конкретизации. Кроме того, различали две основные модификации:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot; style=&quot; margin-top:5px; margin-bottom:1px; margin-left:51px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;Пассивная модель — модель не имеет никаких способов воздействовать на представление или контроллер, и используется ими в качестве источника данных для отображения. Все изменения модели отслеживаются контроллером и он же отвечает за перерисовку представления, если это необходимо. Такая модель чаще используется в &lt;/span&gt;&lt;a href=&quot;http://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&quot;&gt;&lt;span style=&quot; font-size:14px; text-decoration: underline; color:#0b0080;&quot;&gt;структурном программировании&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;, так как в этом случае модель представляет просто структуру данных, без методов их обрабатывающих.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'sans-serif'; font-size:8pt; color:#252525;&quot; style=&quot; margin-top:0px; margin-bottom:1px; margin-left:51px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;Активная модель — модель оповещает представление о том, что в ней произошли изменения, а представления, которые заинтересованы в оповещении, подписываются на эти сообщения. Это позволяет сохранить независимость модели как от контроллера, так и от представления.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QToolBox" name="toolBox">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>0</y>
+      <width>69</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>69</width>
+       <height>103</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Page 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <attribute name="label">
+      <string>Page</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <attribute name="label">
+      <string>Page</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>69</width>
+       <height>103</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Page 2</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
