@@ -1,0 +1,103 @@
+\documentclass[mathserif,utf8,xcolor=table,10pt]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{textpos}
+\usepackage{hyperref}
+%\usepackage{listings}
+\usepackage{listingsutf8}
+%\usepackage{minted}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+%\usepackage[hidelinks,pdfencoding=auto]{hyperref}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C++,
+%  aboveskip=3mm,
+%  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+%  breakatwhitespace=true,
+  tabsize=2,
+ % escapeinside={\%*}{*)},
+ % inputencoding=utf8,
+  inputencoding=utf8/utf8,
+  texcl=true,
+}
+
+\mode<presentation>
+{
+        \usetheme{Antibes}
+        \setbeamercovered{transparent}
+}
+
+\title{Введение в С/C++: структура программ, переменные, выражения, операторы}
+\institute{Степулёнок Денис Олегович}
+\date[октябрь 2015]{14 октября 2015 года}
+\subject{Занятие 1}
+
+\newcommand{\hl}{\only{\cellcolor{yellow}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\setlength{\arrayrulewidth}{1pt}
+
+\begin{document}
+
+%\begin{frame}
+%\titlepage
+%\end{frame}
+
+
+% Языки высокого и низкого уровня. Позиционирование языка C. Преимущества и недостатки C.
+\input{langlevel.tex}
+% История создания языка C, история C++. Перспективы - язык D
+\input{dlang.tex}
+% Установка и настройка IDE Code::Blocks. Запуск программы. Отладка. Решение проблем с настройкой. 
+\input{codeblocks.tex}
+% Программа «Hello world!» на C и на C++. Отличия С и C++ 
+% Общая структура программы. Использование комментариев (практика: комментарии до кода). 
+\input{first.tex}
+\input{preproc.tex}
+
+%\input{qt.tex}
+% Стиль оформления исходных тестов программ. Отступы, "лесенка", пробелы. Преимущества и недостатки автоматического форматирования исходного текста программы. 
+% Правила именования переменных и функций языка, правила записи констант. 
+\input{style.tex}
+% Понятие ключевого или зарезервированного слова, список ключевых слов C++
+\input{keywords.tex}
+% Переменные и типы данных. Основные типы данных: целочисленные (модификаторы знаковый/беззнаковый), вещественные (с плавающей точкой), логический тип, символы, строки.
+\input{types.tex}
+
+% Ввод и вывод данных (консоль) в C и в C++. 
+\input{input_output.tex}
+% Оператор присваивания. Операторы и их приоритеты. Скобки. Сокращённые операторы (+=, -=, *=, /=, %=, ++, --). 
+
+% Инкремент и декремент. Операции отношения: (<, <=, >, >=, ==, !=). 
+
+% Логические операции (! && и ||) 
+% Тернарный оператор
+% Сложные типы данных в C/C++
+% Массивы: одномерные, многомерные. 
+% Записи (struct - структуры). typedef. Записи с вариантами (union). 
+% Оператор ветвления (условного перехода) if else.
+% Множественный выбор switch. 
+% Циклы с предусловием и постусловием: while, do while. Цикл for. Операторы break, continue. 
+
+%\input{git.tex}
+
+\end{document}

@@ -1,0 +1,75 @@
+\section{<<Hello world!>> на C и на C++. Отличия С и C++}
+
+\subsection{Чистый C}
+
+\begin{frame}[t]{Первая программа на чистом C}
+  \lstinputlisting[language=C]{01_first_C/main.c}
+\end{frame}
+
+\subsection{С++}
+
+\begin{frame}[t]{Ввод данных на C++}
+  \lstinputlisting[language=C++]{00_first/main.cpp}
+\end{frame}
+
+\begin{frame}[t,fragile]{Общая структура программы}
+
+\begin{lstlisting}
+// Подключение библиотек
+#include <stdio.h>
+// Все необходимые препроцессорные директивы
+
+int main() { // начало главной функции с именем main
+  // здесь будет находится ваш программный код
+}
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[t,fragile]{Подключение библиотек}
+\begin{lstlisting}
+#include <iostream>
+\end{lstlisting}
+директива препроцессора, предназначена для включения в
+ исходный текст содержимое заголовочного файла, имя которого<iostream>,
+ содержащий описания функций стандартной библиотеки ввода/вывода для работы
+с клавиатурой и экраном.
+
+По простому: Без этой строчки не будут работать функции для вывода текста на экран
+И ввода с клавиатуры. Писать обязательно во всех программах.
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Подключение библиотек}
+\begin{lstlisting}
+using namespace std; 
+\end{lstlisting}
+ директива означает что, все определённые ниже имена будут
+относится к пространству имён std.
+
+В частности, объекты для ввода данных и вывода на консоль 
+находятся в этом пространстве имён.
+
+\begin{lstlisting}
+int a;
+std::cin >> a;
+std::cout << "a = " << a;
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[t,fragile]{Основная функция программы}
+
+Называется \texttt{main} и должна возвращать \texttt{int}
+
+void означает что функция не возвращает никаких значений
+
+\begin{lstlisting}
+int main()  
+{	         
+  // Здесь находится собственно программа, между фигурных скобок.
+}
+\end{lstlisting}
+
+\end{frame}
+

@@ -1,0 +1,5 @@
+sol08.cpp: In function 'int main()':
+sol08.cpp:9:26: warning: operation on 'a' may be undefined [-Wsequence-point]
+   cout << ++a << a << a++;
+                          ^
+553

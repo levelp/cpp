@@ -1,0 +1,59 @@
+\documentclass[mathserif,utf8,xcolor=table,10pt]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{textpos}
+\usepackage{hyperref}
+\usepackage{listingsutf8}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=single,framerule=0pt,
+  language=C++,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+%  breakatwhitespace=true,
+  tabsize=2,
+ % escapeinside={\%*}{*)},
+ % inputencoding=utf8,
+  inputencoding=utf8/utf8,
+  texcl=true,
+}
+
+\mode<presentation>
+{
+        \usetheme{Antibes}
+        \setbeamercovered{transparent}
+}
+
+\title{Работа с текстовыми файлами в C и C++}
+\institute{Степулёнок Денис Олегович}
+\date[октябрь 2015]{28 октября 2015 года}
+\subject{Занятие 5}
+
+\newcommand{\hl}{\only{\cellcolor{yellow}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\setlength{\arrayrulewidth}{1pt}
+
+\begin{document}
+
+% МСВС
+\input{mcbc.tex}
+
+\end{document}

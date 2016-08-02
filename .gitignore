@@ -1,0 +1,49 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# .exe
+*.exe
+
+# Qt
+build-*
+# Пользовательские файлы проекта 
+# (связанные с конкретной цепочной компиляции)
+*.user
+*.user.3.2-pre1
+*.user.*
+
+# Code::Blocks
+bin
+obj
+*.depend
+*.layout
+*.autosave
+*.orig
+.idea
+
+# Сборка проекта
+Makefile
+Makefile.Debug
+Makefile.Release
+*.log
+*.pdb
+/lesson_01/PrintArgs/PrintArgs/Release/PrintArgs.tlog/*.tlog
+
+# Latex-файлы презентации
+*.snm
+*.toc
+*.vrb
+*.pdf
+*.aux
+*.out

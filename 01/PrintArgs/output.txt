@@ -1,0 +1,2 @@
+Number of arguments (argc) = 1
+arg[0] = "C:\Users\gtee\Desktop\cpp\lesson_01\PrintArgs\PrintArgs\Release\PrintArgs.exe"

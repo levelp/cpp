@@ -1,0 +1,17 @@
+\section{Приоритет операций в C/C++}
+
+\subsection{Приоритет операций}
+
+\begin{frame}[t,fragile]{Арифметические операции}
+
+\begin{lstlisting}
+  double x = 10 / 2 * 5;
+  cout << "x = " << x << endl; // 25
+  double x2 = 10 / (2 * 5);
+  cout << "x2 = " << x2 << endl; // 1
+  cout << 10.0 / 2.0 / 5.0 << endl; // 1.0
+\end{lstlisting}
+
+Всегда ставьте скобки, если не очевиден порядок.
+ 
+\end{frame}

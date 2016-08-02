@@ -1,0 +1,6 @@
+sol17.cpp: In function 'int main()':
+sol17.cpp:8:20: warning: second operand of conditional expression has no effect [-Wunused-value]
+   cout << x ? 1 : 2;
+                    ^
+sol17.cpp:8:20: warning: third operand of conditional expression has no effect [-Wunused-value]
+3

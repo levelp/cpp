@@ -1,0 +1,212 @@
+\documentclass[mathserif,utf8,xcolor=table,11pt]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{textpos}
+\usepackage{hyperref}
+%\usepackage{listings}
+\usepackage{listingsutf8}
+%\usepackage{minted}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+%\usepackage[hidelinks,pdfencoding=auto]{hyperref}
+\usepackage{verbatim}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=none,
+  language=C++,
+%  aboveskip=3mm,
+%  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+%  breakatwhitespace=true,
+  tabsize=2,
+ % escapeinside={\%*}{*)},
+ % inputencoding=utf8,
+  inputencoding=utf8/utf8,
+  texcl=true,
+}
+
+\mode<presentation>
+{
+        \usetheme{Antibes}
+        \setbeamercovered{transparent}
+}
+
+\title{<<Странные>> моменты в С/C++: проверьте себя}
+\institute{Степулёнок Денис Олегович}
+\date[август 2016]{17 августа 2016 года}
+\subject{Занятие 1}
+
+\newcommand{\hl}{\only{\cellcolor{yellow}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\setlength{\arrayrulewidth}{1pt}
+
+\begin{document}
+
+\section{Индексация массивов}
+\subsection{sol01.cpp}
+\begin{frame}[t]{Массивы: что выведет эта программа?}
+  \lstinputlisting[language=C++]{sol01.cpp}
+  \lstinputlisting[language={}]{sol01.txt}
+
+Почему $6$? Как работает индексация в C/C++?
+
+Все примеры можно посмотреть и скачать:
+\url{https://github.com/levelp/cpp/tree/master/gcc_strange}
+
+\end{frame}
+
+
+\section{Переполнения}
+\subsection{sol02.cpp}
+\begin{frame}[t]{А как насчёт переполнений? Что вы знаете о них?}
+  \lstinputlisting[language=C++]{sol02.cpp}
+\end{frame}
+
+\subsection{sol05.cpp}
+\begin{frame}[t]{Переполнения: закончится ли когда-либо цикл?}
+  \lstinputlisting[language=C++]{sol05.cpp}
+
+9
+81
+729
+6561
+59049
+531441
+4782969
+43046721
+387420489
+-808182895
+1316288537
+-1038305055
+-754810903
+1796636465
+\end{frame}
+
+\section{Приоритет операций}
+\subsection{sol03.cpp}
+\begin{frame}[t]{<<Странный>> приоритет операций в стандарте C++}
+  \lstinputlisting[language=C++]{sol03.cpp}
+
+  \lstinputlisting[language={}]{sol03.txt}
+\end{frame}
+
+\section{sizeof}
+\subsection{sol04.cpp}
+\begin{frame}[t]{Коварный <<sizeof>>}
+  \lstinputlisting[language=C++]{sol04.cpp}
+
+ % \lstinputlisting[language={}]{sol04.txt}
+\end{frame}
+
+\section{1 <= 2 <= 3}
+\subsection{sol06.cpp}
+\begin{frame}[t]{Проверяем ассоциативность}
+  \lstinputlisting[language=C++]{sol06.cpp}
+\end{frame}
+
+\section{Приоритет операций}
+\subsection{sol07.cpp}
+\begin{frame}[t]{Порядок ввода и порядок вывода}
+  \lstinputlisting[language=C++]{sol07.cpp}
+\end{frame}
+
+\section{a++ ++a}
+\subsection{sol08.cpp}
+\begin{frame}[t]{Преинкремент и постинкремент}
+  \lstinputlisting[language=C++]{sol08.cpp}
+  \lstinputlisting[language={}]{sol08.txt}
+ В GCC ответ 553, как он получается?
+\end{frame}
+
+% Не знаю что в этом примере не так
+%\section{Приоритеты}
+%\subsection{sol09.cpp}
+%\begin{frame}[t]{Приоритет операций. Ставим скобки!}
+% Приоритет операций неочевиден, 
+% результат вычислений непредсказуем.
+%
+%  \lstinputlisting[language=C++]{sol09.cpp}
+%\end{frame}
+
+\section{Фокусы с map}
+\subsection{sol10.cpp}
+\begin{frame}[t]{Фокусы с map}
+  \lstinputlisting[language=C++]{sol10.cpp}
+  \lstinputlisting[language={}]{sol10.txt}
+\end{frame}
+
+\section{Приоритеты}
+\subsection{sol11.cpp}
+\begin{frame}[t]{Проверяем ассоциативность}
+  \lstinputlisting[language=C++]{sol11.cpp}
+ % \lstinputlisting[language={}]{sol11.txt}
+\end{frame}
+
+\section{sizeof}
+\subsection{sol12.cpp}
+\begin{frame}[t]{Проверяем ассоциативность}
+  \lstinputlisting[language=C++]{sol12.cpp}
+ % \lstinputlisting[language={}]{sol12.txt}
+\end{frame}
+
+\section{sizeof}
+\subsection{sol13.cpp}
+\begin{frame}[t]{Проверяем ассоциативность}
+  \lstinputlisting[language=C++]{sol13.cpp}
+ % \lstinputlisting[language={}]{sol13.txt}
+\end{frame}
+
+\section{sizeof}
+\subsection{sol14.cpp}
+\begin{frame}[t]{Проверяем ассоциативность}
+  \lstinputlisting[language=C++]{sol14.cpp}
+%  \lstinputlisting[language={}]{sol14.txt}
+\end{frame}
+
+\section{sizeof}
+\subsection{sol15.cpp}
+\begin{frame}[t]{Проверяем ассоциативность}
+  \lstinputlisting[language=C++]{sol15.cpp}
+  \lstinputlisting[language={}]{sol15.txt}
+\end{frame}
+
+\section{Динамическая память}
+\subsection{sol16.cpp}
+\begin{frame}[t]{Фокусы с вектором}
+  \lstinputlisting[language=C++]{sol16.cpp}
+\end{frame}
+
+\section{Приоритеты}
+\subsection{sol17.cpp}
+\begin{frame}[t]{Тернарный оператор и приоритеты операций}
+  \lstinputlisting[language=C++]{sol17.cpp}
+  \lstinputlisting[language={}]{sol17.txt}
+
+Таблица приоритетов операций в C++:
+\url{http://en.cppreference.com/w/cpp/language/operator_precedence}
+\end{frame}
+
+\section{Переполнения}
+\subsection{sol18.cpp}
+\begin{frame}[t]{Переполнения}
+  \lstinputlisting[language=C++]{sol18.cpp}
+\end{frame}
+
+
+\end{document}

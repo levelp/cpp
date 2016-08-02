@@ -1,0 +1,166 @@
+%%
+%% This is file `pscyr.sty' of PSCyr package
+%%
+%% Created by Vitaly Repin <2:5030/209.26@fidonet.org>,
+%%                         <vitaly@radio.hop.stu.neva.ru>.
+%% Changes by Konstantin Chumachenko <chumachenko@writeme.com>
+%% Changes by Alexander Lebedev <swan@mch.chem.msu.su>, 2000-2002
+%%
+%% NO PERMISSION is granted to distribute a modified version
+%% of this file under its original name.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ProvidesPackage{pscyr}[2002/07/04 v0.4d Cyrillic Type1 fonts as default]
+
+\def\acdefault{fac} %% Academy
+\def\addefault{fad} %% Advertisement
+\def\aqdefault{faq} %% AntiquaPSCyr
+\def\codefault{fco} %% College
+\def\cpdefault{fcp} %% CooperPSCyr
+\def\erdefault{fer} %% ERKurierPSCyr
+\def\hadefault{fha} %% HandbookPSCyr
+\def\jndefault{fjn} %% JournalPSCyr
+\def\lzdefault{flz} %% Lazurski
+\def\madefault{fma} %% MagazinePSCyr
+\def\svdefault{fsv} %% SouvenirPSCyr
+\def\txdefault{ftx} %% TextbookPSCyr
+
+\def\ardefault{far} %% ArialMT
+\def\crdefault{fcr} %% CourierNewPSMT
+\def\tmdefault{ftm} %% TimesNewRomanPSMT
+
+%%
+%% Define font families.
+%%
+\DeclareRobustCommand\acfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\acdefault\selectfont}
+
+\DeclareRobustCommand\adfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\addefault\selectfont}
+
+\DeclareRobustCommand\aqfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\aqdefault\selectfont}
+
+\DeclareRobustCommand\cofamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\codefault\selectfont}
+
+\DeclareRobustCommand\cpfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\cpdefault\selectfont}
+
+\DeclareRobustCommand\erfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\erdefault\selectfont}
+
+\DeclareRobustCommand\hafamily 
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\hadefault\selectfont}
+
+\DeclareRobustCommand\jnfamily 
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\jndefault\selectfont}
+
+\DeclareRobustCommand\lzfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\lzdefault\selectfont}
+
+\DeclareRobustCommand\mafamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\madefault\selectfont}
+
+\DeclareRobustCommand\svfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\svdefault\selectfont}
+
+\DeclareRobustCommand\txfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\txdefault\selectfont}
+
+
+\DeclareRobustCommand\arfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\ardefault\selectfont}
+
+\DeclareRobustCommand\crfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\crdefault\selectfont}
+
+\DeclareRobustCommand\tmfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\tmdefault\selectfont}
+
+
+\DeclareTextFontCommand{\textac}{\acfamily}
+\DeclareTextFontCommand{\textad}{\adfamily}
+\DeclareTextFontCommand{\textaq}{\aqfamily}
+\DeclareTextFontCommand{\textco}{\cofamily}
+\DeclareTextFontCommand{\textcp}{\cpfamily}
+\DeclareTextFontCommand{\texter}{\erfamily}
+\DeclareTextFontCommand{\textha}{\hafamily}
+\DeclareTextFontCommand{\textjn}{\jnfamily}
+\DeclareTextFontCommand{\textlz}{\lzfamily}
+\DeclareTextFontCommand{\textma}{\mafamily}
+\DeclareTextFontCommand{\textsv}{\svfamily}
+\DeclareTextFontCommand{\texttx}{\txfamily}
+
+\DeclareTextFontCommand{\textar}{\arfamily}
+\DeclareTextFontCommand{\textcr}{\crfamily}
+\DeclareTextFontCommand{\texttm}{\tmfamily}
+
+%%
+%% Declare default font families.
+%%
+\def\rmdefault{faq}
+\def\sfdefault{ftx}
+\def\ttdefault{fer}
+
+%%
+%% Math support for faq/ftx font families.
+%%
+\DeclareOption{math}{%
+    \def\rmdefault{faq}
+    \def\sfdefault{ftx}
+    \DeclareSymbolFont{operators}{OT1}{faq}{m}{n}
+    \DeclareSymbolFont{letters}{OML}{faq}{m}{it}
+    \SetSymbolFont{letters}{bold}{OML}{faq}{bx}{it}
+    \DeclareMathAlphabet{\mathbf}{OT1}{faq}{bx}{it} % bx/it or bx/m
+    \DeclareMathAlphabet{\mathit}{OT1}{faq}{m}{it}
+    \DeclareMathAlphabet{\mathsf}{OT1}{ftx}{m}{n}
+}
+\ProcessOptions
+\renewcommand{\hbar}{{\mathchar'26\mkern-8.5muh}}
+
+%%
+%% This part is added for compatibility with font names used in earlier
+%% version.
+%%
+
+\def\cldefault{\codefault}   
+\def\hbdefault{\hadefault}   
+\def\mgdefault{\madefault}   
+
+\DeclareRobustCommand\clfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\cldefault\selectfont}
+
+\DeclareRobustCommand\hbfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\hbdefault\selectfont}
+
+\DeclareRobustCommand\mgfamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\mgdefault\selectfont}
+
+\DeclareTextFontCommand{\textcl}{\clfamily}
+\DeclareTextFontCommand{\texthb}{\hbfamily}
+\DeclareTextFontCommand{\textmg}{\mgfamily}
+
+\endinput
+
+%%
+%% End of file `pscyr.sty'.

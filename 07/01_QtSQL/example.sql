@@ -1,0 +1,18 @@
+BEGIN TRANSACTION;
+CREATE TABLE contacts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, birthday TEXT);
+INSERT INTO contacts VALUES(1,'Вася','25.01.2014');
+INSERT INTO contacts VALUES(2,'Петя',NULL);
+INSERT INTO contacts VALUES(3,'Маша','26.01.2014');
+INSERT INTO contacts VALUES(4,'Оля','25.01.2014');
+INSERT INTO contacts VALUES(5,'Оля','26.01.2014');
+INSERT INTO contacts VALUES(6,'Лена','31.01.2014');
+INSERT INTO contacts VALUES(7,'Лена','31.01.2014');
+INSERT INTO contacts VALUES(9,'Лена','31.01.2014');
+INSERT INTO contacts VALUES(10,'Лена','31.01.2014');
+INSERT INTO contacts VALUES(11,3234,NULL);
+CREATE TABLE phones (contact_id NUMERIC, phone TEXT);
+INSERT INTO phones VALUES(9,+79113523325);
+INSERT INTO phones VALUES(7,+79213295835);
+CREATE TABLE sqlite_sequence(name,seq);
+INSERT INTO sqlite_sequence VALUES('contacts',11);
+COMMIT;

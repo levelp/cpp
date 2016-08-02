@@ -1,0 +1,98 @@
+\documentclass[mathserif,utf8,xcolor=table,10pt]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{textpos}
+\usepackage{hyperref}
+\usepackage{listingsutf8}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=single,framerule=0pt,
+  language=C++,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+%  breakatwhitespace=true,
+  tabsize=2,
+ % escapeinside={\%*}{*)},
+ % inputencoding=utf8,
+  inputencoding=utf8/utf8,
+  texcl=true,
+}
+
+\mode<presentation>
+{
+        \usetheme{Antibes}
+        \setbeamercovered{transparent}
+}
+
+\title{Работа с текстовыми файлами в C и C++}
+\institute{Степулёнок Денис Олегович}
+\date[август 2016]{28 октября 2015 года}
+\subject{Занятие 5}
+
+\newcommand{\hl}{\only{\cellcolor{yellow}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\setlength{\arrayrulewidth}{1pt}
+
+\begin{document}
+
+%\begin{frame}
+%\titlepage
+%\end{frame}
+
+% Ввод и вывод из текстового файла. Чтение, запись данных в файлы txt, ini.
+
+% Чтение/запись произвольных текстовых данных в файлы txt, ini (ввод/вывод данных).
+
+% Символы, строки и их кодировка.
+
+% Параметры командной строки в C++
+
+
+
+% Сложные типы данных в C/C++
+% Массивы: одномерные, многомерные. 
+% Записи (struct - структуры). typedef. Записи с вариантами (union). 
+
+%\input{oop.tex}
+
+
+% 2. Организация совместной работы, системы контроля версий
+% * Системы контроля версий: централизованные, распределённые
+% * История версий, ветки
+% * Основы работы с git
+%\input{git.tex}
+
+
+
+% * Виды тестирования и отладки
+%\input{debug.tex}
+
+% Приоритет операций
+%\input{op_priority.tex}
+
+
+% Чтение и запись текстовых файлов 
+%\input{modules.tex}
+
+
+% * Литература по C/C++.
+
+\end{document}
