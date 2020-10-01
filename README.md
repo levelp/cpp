@@ -1,4 +1,4 @@
-C++ junior developer
+C++ junior developer- Begineer to Master
 ====================
 
 * Степулёнок Денис Олегович
