@@ -118,7 +118,7 @@ int main() {
     new Point("A", 1.2, 2.1),
     new Point("B", 5, 6),
     new Line("AB", Point("A", 1.2, 2.1),
-    Point("B", 5, 6)),
+             Point("B", 5, 6)),
     new Circle("CircleA", Point("A", 1.2, 2.1), 5.0),
     new Circle("CircleB", Point("B", 5, 6), 7.2)
   };

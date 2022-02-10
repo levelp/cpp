@@ -26,7 +26,7 @@ struct qt_meta_stringdata_MainWindow_t {
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
       qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata) + ofs \
                - idx * sizeof(QByteArrayData)) \
-                                                         )
+      )
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
   {
     QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
